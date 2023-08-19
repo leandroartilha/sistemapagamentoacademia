@@ -1,0 +1,36 @@
+﻿@model academia.Models.Aluno
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form asp-action="Create">
+    <div class="row">
+        <div class="col">
+            <label asp-for="Nome"></label>
+            <input asp-for="Nome" />
+        </div>
+        <div class="col">
+            <label asp-for="Valor"></label>
+            <input asp-for="Valor" />
+        </div>
+        <div class="col">
+            <label asp-for="DataMensalidade"></label>
+            <input asp-for="DataMensalidade" type="date"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Gravar</button>
+        </div>
+    </div>
+</form>
+
+
+
+@section Scripts {
+
+    <script src="~/js/fstdropdown.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}
